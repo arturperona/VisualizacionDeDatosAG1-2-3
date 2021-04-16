@@ -33,7 +33,7 @@ var data = [
     {"year": 1994, "name":"gamma", "value": 25},
     {"year": 1994, "name":"delta", "value": 32}
   ]
-  var visualization = d3plus.viz()
+  var visualization2 = d3plus.viz()
     .container("#viz")
     .data(data)
     .type("bar")
@@ -42,3 +42,12 @@ var data = [
     .y("value")
     .axes({"ticks" : false})
     .draw()
+
+  var visualizacion3  = d3plus.viz()
+    .container("#viz2")
+    .data(data)
+    .type("boxplot")
+    .id("name")
+    .x("year")
+    .y("Value")
+    .draw() 
